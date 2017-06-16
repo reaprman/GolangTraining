@@ -1,1 +1,0 @@
-Testing an example from Udemy Go training
