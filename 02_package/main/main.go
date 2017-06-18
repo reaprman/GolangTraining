@@ -8,5 +8,5 @@ import (
 
 func main() {
 	fmt.Println(stringutil.Reverse("!oG, olleH"))
-	fmt.Println(stringutil.myName)
+	fmt.Println(stringutil.MyName)
 }
