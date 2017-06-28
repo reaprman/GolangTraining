@@ -10,3 +10,5 @@ func main() {
 	max := max(7)
 	fmt.Println(max) // max is now the result and the function cannot be referenced
 }
+
+// This is an example of variable shadowing.
