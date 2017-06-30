@@ -20,6 +20,12 @@ func main() {
 }
 
 /*
+1st Run:
+
+binary          decimal
+10000000000     1024
+100000000000000000000   1048576
+
 2nd Run Results:
 binary          decimal
 10000000000     1024
