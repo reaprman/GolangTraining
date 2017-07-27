@@ -12,3 +12,8 @@ func main() {
 		fmt.Println("Both of your names start with J")
 	}
 }
+
+/*
+Run Results:
+Wassup Tim, or, err, Jenny
+*/

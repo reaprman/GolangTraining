@@ -20,3 +20,10 @@ func main() {
 		fmt.Println("Wassup Sushant")
 	}
 }
+
+/*
+Run Results:
+Wassup Marcus
+Wassup Medhi
+Wassup Julian
+*/
