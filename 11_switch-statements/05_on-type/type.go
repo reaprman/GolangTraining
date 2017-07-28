@@ -19,3 +19,9 @@ func SwitchOnType(x interface{}) {
 			fmt.Println("unknown")
 	}
 }
+
+func main() {
+	SwitchOnType(7)
+	SwitchOnType("McLeod")
+	var t = Contact{"Godd to see you,",}
+}
