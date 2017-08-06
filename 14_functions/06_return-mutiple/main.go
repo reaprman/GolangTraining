@@ -12,5 +12,5 @@ func greet(fname, lname string) (string, string) {
 
 /*
 Run Resutls:
-
+Jane Doe  Doe Jane
 */
