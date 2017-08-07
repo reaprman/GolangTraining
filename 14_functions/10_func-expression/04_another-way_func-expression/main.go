@@ -15,5 +15,5 @@ func main() {
 
 /*
 Run Results:
-
+Hello world!
 */

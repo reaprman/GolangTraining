@@ -16,6 +16,7 @@ func main() {
 }
 
 /*
-Run Results:1
+Run Results:
+1
 2
 */
