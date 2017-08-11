@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	if true {
+	if true || false {
 		fmt.Println("This ran")
-	}
-	if false {
-		fmt.Println("This did not run")
+
 	}
 }
 
 /*
+or operator - ||
+
 Run Results:
 This ran
 */
