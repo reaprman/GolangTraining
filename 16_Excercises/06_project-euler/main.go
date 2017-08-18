@@ -8,8 +8,8 @@ func twoSum(nums []int, target int) []int {
 	for i := 0; i < len(nums); i++ {
 		for j := i + 1; j < len(nums); j++ {
 			if nums[i]+nums[j] == target {
-				check[0] = i
-				check[1] = j
+				check[0] = nums[i]
+				check[1] = nums[j]
 			}
 		}
 	}
@@ -32,5 +32,5 @@ the two numbers such that they add up to a specific target
 Run Result:
 Please find the sum of two numbers that equal  9
 From the followin list:  [2 7 11 15]
-Answer:  [0 1]
+Answer:  [2 7]
 */
