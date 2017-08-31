@@ -12,7 +12,7 @@ func main() {
 	fmt.Println(myGreeting)
 
 	if val, exists := myGreeting[2]; exists {
-		delete(myGreeting, 2)
+		fmt.Println("That value exist.")
 		fmt.Println("Val: ", val)
 		fmt.Println("exists?: ", exists)
 	} else {
@@ -25,8 +25,9 @@ func main() {
 
 /*
 Run Results:
-map[2:Buenos dias 3:Bongiorno! 0:Good morning 1:Bonjour]
+map[0:Good morning 1:Bonjour 2:Buenos dias 3:Bongiorno!]
+That value exist.
 Val:  Buenos dias
 exists?:  true
-map[3:Bongiorno! 0:Good morning 1:Bonjour]
+map[0:Good morning 1:Bonjour 2:Buenos dias 3:Bongiorno!]
 */
