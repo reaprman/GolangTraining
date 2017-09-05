@@ -17,5 +17,7 @@ func main() {
 
 /*
 Run Result:
-
+*main.person
+James
+20
 */
