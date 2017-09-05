@@ -3,45 +3,43 @@ package main
 import "fmt"
 
 type Person struct {
-	Name string
-	Age  int
+	First string
+	Last  string
+	Age   int
 }
 
 type DoubleZero struct {
 	Person
+	First         string
 	LicenseToKill bool
 }
 
-// Greeting - struct examples
-
-func (p Person) Greeting() {
-	fmt.Println("I'm just a regular person.")
-}
-
-func (dz DoubleZero) Greeting() {
-	fmt.Println("Miss Moneypenny, so good to see again")
-}
-
 func main() {
-	p1 := Person{
-		Name: "Tony Stark",
-		Age:  44,
+	p1 := DoubleZero{
+		Person: Person{
+			First: "James",
+			Last:  "Bond",
+			Age:   25,
+		},
+		First:         "Double Zero Seven",
+		LicenseToKill: true,
 	}
 	p2 := DoubleZero{
 		Person: Person{
-			Name: "James Bond",
-			Age:  25,
+			First: "James",
+			Last:  "Bond",
+			Age:   20,
 		},
-		LicenseToKill: true,
+		First:         "If looks could kill",
+		LicenseToKill: false,
 	}
-	p1.Greeting()
-	p2.Greeting()
-	p2.Person.Greeting()
+	// fields and methods of an inner type are promoted to the outer type
+	fmt.Println(p1.First, p1.Person.First)
+	fmt.Println(p2.First, p2.Person.First)
 }
 
 /*
 Run Result:
-I'm just a regular person.
-Miss Moneypenny, so good to see again
-I'm jsut a regular person.
+Double Zero Seven James
+If looks could kill James
 */
