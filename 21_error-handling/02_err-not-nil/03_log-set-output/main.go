@@ -26,5 +26,6 @@ func main() {
 
 /*
 Run Result:
+new log file is created. func init() run initializations or setup before running main()
 
 */
